@@ -10,9 +10,11 @@ It uses External Interrupt(EXTI) to capture the pulses and uses timer(TIM2 in th
 
 Usage
 =====
-
+0: Add library files to your project
+0.5: Add #include "ir_decode.h" to your project
 1: Modify defines in ir_decode.h to suit your project
 2: Specify EXTI handler in your project(prefferably in your main.c as it is in the example)
+3: Specify TIMx handler in your project(again prefferably in your main.c)
 3: Specify NEC_ReceiveInterrupt. It is the function that is called when a frame was successfully decoded.
 4: Use (NEC_FRAME).Address and (NEC_FRAME).Command in your project
 5: Build it
