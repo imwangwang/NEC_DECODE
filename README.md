@@ -10,6 +10,7 @@ It uses External Interrupt(EXTI) to capture the pulses and uses timer(TIM2 in th
 
 Usage
 =====
+There are several basic steps to get it working...
 0: Add library files to your project
 0.5: Add #include "ir_decode.h" to your project
 1: Modify defines in ir_decode.h to suit your project
