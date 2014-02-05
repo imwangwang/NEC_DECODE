@@ -10,6 +10,7 @@ It uses External Interrupt(EXTI) to capture the pulses and uses timer(TIM2 in th
 
 Usage
 =====
+
 There are several basic steps to get it working...
 0: Add library files to your project
 0.5: Add #include "ir_decode.h" to your project
@@ -25,7 +26,7 @@ There are several basic steps to get it working...
 Example
 =======
 
-Currently I have only STM32F4DISCOVERY Board so that is the only micro I tested... But as long as you have correct defines it should work ok... and if you have any problems just email me : petoknm@gmail.com
+Currently I have only STM32F4DISCOVERY Board so that is the only micro I tested... But as long as you have correct defines it should work ok...If it compliants about VFP arguments change both makefiles(example/lib,example/) to have -mfloat-abi=softfp instead of hard... and if you have any problems just email me : petoknm@gmail.com
 
 In main.c implemented:
 void NEC_ReceiveInterrupt(NEC_FRAME f)
